@@ -48,7 +48,7 @@ def extract_MFCC(audio_URI, output_URI):
 
 
 if __name__ == '__main__':
-    ##@## run only once
+    ##@## run segment_phonemes only once
 #     segment_phonemes(whichFold)
 
     
