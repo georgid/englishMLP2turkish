@@ -12,7 +12,7 @@ import tgt
 
 PHONEMELIST = ['AA' ,'E', 'IY', 'I', 'O', 'U', 'OE', 'UE', 'B', 'D', 'GG', 'H', 'KK', 'LL', 'M', 'NN', 'P', 'RR', 'S', 'SH',\
  'T',  'Y', 'Z', 'C', 'CH', 'F', 'J', 'sil']
-PHONEMELIST = ['AA'] # do  for only one phoneme
+PHONEMELIST = ['AA'] # test for only one phoneme, for debugging stage
 
 
 AUDIO_REC_IDS = [
@@ -22,7 +22,7 @@ AUDIO_REC_IDS = [
 'b49c633c-5059-4658-a6e0-9f84a1ffb08b',
 # '727cff89-392f-4d15-926d-63b2697d7f3f'
 # '567b6a3c-0f08-42f8-b844-e9affdc9d215'
-### 4 folds without last two
+### done in 4 folds without last two due to lack of time
 ]
 
 #### use leave-one out
@@ -101,7 +101,7 @@ def segment_phonemes(whichFold):
     '''
 
     for each phoneme: extract the audio segments from many audio files and concatentate it in a wav file
-    then one can extract features from that audio (see etractFeatures script)
+    then one can extract features from that audio (see extractFeatures script)
     
     all_audio_seg:  the concatenated audio
     '''
